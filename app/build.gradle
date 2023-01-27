@@ -21,7 +21,7 @@ android {
             sourceCompatibility JavaVersion.VERSION_1_8
             targetCompatibility JavaVersion.VERSION_1_8
         }
-        python {
+        /*python {
             buildPython "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\python.exe"
             pip {
                 install "opencv-python"
@@ -34,14 +34,14 @@ android {
 //                install "scipy"
 //                install "matplotlib"
             }
-        }
+        }*/
     }
 
     signingConfigs {
         config {
             keyAlias '__uni__0e952c8'
             keyPassword '0H4qVXdJ'
-            storeFile file('E:\\AndroidProjects\\UniPlugin-Hello-AS\\app\\142f286b06a25a2adf4408d044af2d24.keystore')
+            storeFile file('.\\142f286b06a25a2adf4408d044af2d24.keystore')
             storePassword '0H4qVXdJ'
             v1SigningEnabled true
             v2SigningEnabled true
