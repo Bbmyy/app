@@ -13,6 +13,9 @@ public class NativePageActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        GlobalData.appContext = getApplicationContext();
+        finish();
+/*
         FrameLayout rootView = new FrameLayout(this);
         TextView textView = new TextView(this);
         textView.setTextColor(Color.BLACK);
@@ -28,6 +31,6 @@ public class NativePageActivity extends Activity {
                 finish();
             }
         });
-        setContentView(rootView);
+        setContentView(rootView);*/
     }
 }
