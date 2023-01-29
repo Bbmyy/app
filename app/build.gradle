@@ -15,26 +15,28 @@ android {
         versionName "1.0"
         multiDexEnabled true
         ndk {
-            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+            abiFilters  "x86_64" //"armeabi-v7a", "arm64-v8a", "x86",
         }
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_8
             targetCompatibility JavaVersion.VERSION_1_8
         }
-        /*python {
+        python {
             buildPython "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\python.exe"
             pip {
-                install "opencv-python"
-                install "numpy"
-                install "torch==1.4.0"
-                install "torchvision==0.5.0"
-                install "scipy"
-                //install "cpca"
+                options "--extra-index-url", "E:/AndroidProjects/UniPlugin-Hello-AS/lib"
+                //install "opencv-python"
+                //install "numpy"
+                //install "torch==1.4.0"
+                //install "torchvision==0.5.0"
+                //install "scipy"
+                install "cpca"
+                //install "pse"
 //                install "wave"
 //                install "scipy"
 //                install "matplotlib"
             }
-        }*/
+        }
     }
 
     signingConfigs {
