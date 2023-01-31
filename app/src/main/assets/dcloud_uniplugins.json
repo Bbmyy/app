@@ -6,6 +6,11 @@
           "type": "module",
           "name": "TestModule",
           "class": "io.dcloud.uniplugin.TestModule"
+        },
+        {
+          "type": "module",
+          "name": "PythonModule",
+          "class": "io.dcloud.uniplugin.PythonModule"
         }
       ]
     },
